@@ -9,8 +9,7 @@ const userEmail = document.getElementById('userEmail');
 const userMessage = document.getElementById('userMessage');
 const feedbackForm = document.querySelector('.feedback-form');
 
-
-function inputHandler(e) {
+function inputHandler() {
   formData.email = userEmail.value.trim();
   formData.message = userMessage.value.trim();
 
@@ -20,7 +19,7 @@ function inputHandler(e) {
 function submitHandler(e) {
   e.preventDefault();
 
-  if (!userEmail.value || !userMessage.value) {
+  if (!formData.email || !formData.message) {
     return alert('Fill please all fields');
   }
 
