@@ -6,7 +6,7 @@ const formData = {
 };
 
 const feedbackForm = document.querySelector('form');
-const userEmail = feedbackForm.elements.email;
+const userEmail = feedbackForm.elements;
 const userMessage = feedbackForm.elements.message;
 
 function inputHandler(e) {
