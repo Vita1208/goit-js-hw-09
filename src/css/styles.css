@@ -8,6 +8,7 @@
 @import url('./vite-promo.css');
 @import url('./header.css');
 
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -22,4 +23,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+.button-form-gallery {
+  border-radius: 8px;
+  width: 125px;
+  height: 75px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  position: center;
 }
