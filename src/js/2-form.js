@@ -5,7 +5,9 @@ const formData = {
   message: '',
 };
 
-const feedbackForm = document.querySelector('form');
+const userEmail = document.getElementById('userEmail');
+const userMessage = document.getElementById('userMessage');
+const feedbackForm = document.querySelector('.feedback-form');
 
 
 function inputHandler(e) {
