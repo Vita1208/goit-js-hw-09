@@ -6,8 +6,8 @@ const formData = {
 };
 
 const feedbackForm = document.querySelector('form');
-const userEmail = feedbackForm.elements('email');
-const userMessage = feedbackForm.elements('message');
+const userEmail = feedbackForm.querySelector('[name="email"]');
+const userMessage = feedbackForm.querySelector('[name="message"]');
 
 function inputHandler(e) {
   formData.email = userEmail.value.trim();
