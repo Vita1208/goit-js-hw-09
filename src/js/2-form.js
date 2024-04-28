@@ -1,7 +1,7 @@
 const formData = JSON.parse(localStorage.getItem("feedback-form-state")) || { email: "", message: "" };
 
 
-form.elements.addEventListener('change', updateFormData);
+form.elements.Email.addEventListener('change', updateFormData);
 form.elements.message.onchange = updateFormData;
 function updateFormData() {
     formData.email = form.elements.email.value.trim();
