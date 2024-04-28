@@ -1,7 +1,6 @@
 const formData = JSON.parse(localStorage.getItem("feedback-form-state")) || { email: "", message: "" };
 
 form.addEventListener("change", () => {
-    const formData = JSON.parse(localStorage.getItem("feedback-form-state")) || { email: "", message: "" };
     formData.email = form.elements.email.value.trim();
     formData.message = form.elements.message.value.trim();
     localStorage.setItem("feedback-form-state", JSON.stringify(formData));
