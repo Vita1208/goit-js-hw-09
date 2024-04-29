@@ -1,16 +1,3 @@
-
-//  <li class="gallery-item">
-   // <a class="gallery-link" href="large-image.jpg">
-    //  <img
-     //   class="gallery-image"
-     //   src="small-image.jpg"
-      //  data-source="large-image.jpg"
-      //  alt="Image description"
-   //   />
-   // </a>
- // </li>;
-
-
 const images = [
   {
     preview:
@@ -76,14 +63,13 @@ const images = [
     description: 'Lighthouse Coast Sea',
   },
 ];
-
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 const galleryMarkup = document.querySelector(".gallery");
 
 const markup = images.reduce((html, image) => {
-    return (html += `<li class="gallery-item">
+  return (html += `<li class="gallery-item">
   <a class="gallery-link" href="${image.original}">
     <img
       class="gallery-image"
@@ -96,16 +82,11 @@ const markup = images.reduce((html, image) => {
 
 galleryMarkup.insertAdjacentHTML("beforeend", markup);
 
-document.addEventListener('DOMContentLoaded', function () {
-  const gallery = new SimpleLightbox('.gallery a', {
-    captions: true, 
-    captionsData: 'alt', 
-    captionDelay: 250, 
-  });
+const gallery = new SimpleLightbox('.gallery a', {
+  captions: true, 
+  captionsData: 'alt', 
+  captionDelay: 250, 
 });
-
-
-
 
 
 
